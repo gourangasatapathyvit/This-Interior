@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern interior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mob__container" onclick="toogle()" id="mob__container">
+        <div class="close__line">
+            <h2>This Interior</h2>
+            <button class="button__close hamburg __header">Close</button>
+        </div>
+
+        <div class="href__list">
+            <a class="option__ option" href="#">Home</a>
+            <a class="option__ option" href="#">Collection</a>
+            <a class="option__ option" href="#">About</a>
+            <a class="option__ option" href="#">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="sub__container">
+
+
+
+            <nav class="navbar">
+                <header class="__header">This Interior</header>
+
+                <div class="blank"></div>
+
+                <button class="hamburg __header" onclick="toogle()">Menu</button>
+
+                <ul class="nav__option">
+                    <li class="option">Home</li>
+                    <li class="option">Collection</li>
+                    <li class="option">About</li>
+                    <li class="option">Contact</li>
+                </ul>
+
+            </nav>
+
+
+            <section class="section__body">
+                <div class="details__">
+                    <h2 class="heading pad">Modern interior</h2>
+                    <p class="para pad">A full-Service residential & commercial interior design and staging company
+                        offering
+                        professional organizing & eco-services.</p>
+
+                    <a class="readmore pad" href="#">Read more &#8594;</a>
+
+                </div>
+
+                <div class="image__section">
+                    <figure class="imagecontainer">
+                        <img src="photo1.png" alt="">
+                    </figure>
+
+
+                    <div class="sub__section">
+                        <div class="user">
+                            <img src="photo2.png" alt="profile photo">
+
+                            <div class="details">
+                                <h3 class="name">Aliza Webber</h3>
+                                <h6 class="work">Interior designer</h6>
+                            </div>
+                        </div>
+                        <h3 class="designedby">Designed in 2020 by <br> Aliza Webber</h3>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        function toogle() {
+            let ele = document.getElementById("mob__container");
+            if (ele.classList.contains('mob__container__open')) {
+                ele.classList.remove('mob__container__open');
+            }
+            else {
+                ele.classList.add('mob__container__open');
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
